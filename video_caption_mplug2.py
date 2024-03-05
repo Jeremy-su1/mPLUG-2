@@ -404,7 +404,10 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    config = yaml.load(open(args.config, 'r'), Loader=yaml.Loader)
+    #edit
+    from ruamel.yaml import YAML
+    yaml = YAML(typ='rt')
+    config = yaml.load(open(args.config, 'r'))
 
     args.result_dir = os.path.join(args.output_dir, 'result')
 

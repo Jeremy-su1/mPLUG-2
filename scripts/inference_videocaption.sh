@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 MASTER_ADDR=127.0.0.1
-MASTER_PORT=2$(($RANDOM % 10))$(($RANDOM % 10))15
+MASTER_PORT=2$((( RANDOM % 10)))$(((RANDOM % 10)))15
 WORLD_SIZE=1
 RANK=0
 
